@@ -1,3 +1,5 @@
+package com.iamning.service;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -7,7 +9,8 @@ import java.io.IOException;
 public class HelloServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        1.获取前端参数（jsp）
+    
+        //        1.获取前端参数（jsp）
         String method=req.getParameter("method");
         if(method.equals("add")){
             req.getSession().setAttribute("msg","执行了add方法");
