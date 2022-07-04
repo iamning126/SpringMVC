@@ -11,6 +11,7 @@
     <modules>
         <module>SpringMVC01-servlet</module>
         <module>SpringMVC02-helloMVC</module>
+        <module>SpringMVC03-helloMVC</module>
     </modules>
     <dependencies>
     <!--依赖-->
