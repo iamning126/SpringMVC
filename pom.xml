@@ -12,6 +12,8 @@
         <module>SpringMVC01-servlet</module>
         <module>SpringMVC02-helloMVC</module>
         <module>SpringMVC03-helloMVC</module>
+        <module>SpringMVC04-annotation</module>
+        <module>SpringMVC05-Controller</module>
     </modules>
     <dependencies>
     <!--依赖-->
@@ -41,5 +43,25 @@
             <version>1.2</version>
         </dependency>
     </dependencies>
-
+    <!--maven的资源过滤问题-->
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
+    </build>
 </project>
