@@ -12,7 +12,6 @@
     <!--<mvc:annotation-driven/>-->
     <!--<mvc:default-servlet-handler/>-->
 
-
     <!--视图解析图:模板引擎 Thymeleof Freemarker-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"
           id="InternalResourceViewResolver">
@@ -21,5 +20,4 @@
         <!--后缀-->
         <property name="suffix" value=".jsp"/>
     </bean>
-    <bean name="/t1" class="com.iamning.controller.ControllerTest1"/>
 </beans>

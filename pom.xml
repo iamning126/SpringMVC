@@ -14,6 +14,7 @@
         <module>SpringMVC03-helloMVC</module>
         <module>SpringMVC04-annotation</module>
         <module>SpringMVC05-Controller</module>
+        <module>SpringMVC06-json</module>
     </modules>
     <dependencies>
     <!--依赖-->
